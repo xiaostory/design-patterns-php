@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit bootstrap="./vendor/autoload.php" colors="true">
+
+    <testsuites>
+        <testsuite name="design-patterns">
+            <!-- <directory suffix="Test.php">Creational/SimpleFactory/Tests</directory> -->
+            <directory suffix="Test.php">Creational/FactoryMethod/Tests</directory>
+            <!-- <directory suffix="Test.php">Creational/AbstractFactory/Tests</directory>
+            <directory suffix="Test.php">Creational/Singleton/Tests</directory>
+            <directory suffix="Test.php">Creational/Prototype/Tests</directory> -->
+        </testsuite>
+    </testsuites>
+    <filter>
+        <blacklist>
+            <directory>./vendor</directory>
+        </blacklist>
+    </filter>
+</phpunit>
